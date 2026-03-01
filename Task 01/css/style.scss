@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+/* -------------------------------
+   Variables
+---------------------------------*/
+$container-width: 1200px;
+$bg-color: rgb(222, 222, 222);
+$main-font: "Sora", sans-serif;
+
+$shadow-sm: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+$font-sm: 12px;
+$font-md: 14px;
+$font-lg: 16px;
+$font-xl: 18px;
+$font-xxl: 20px;
+
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 12px;
+
+$input-padding: 8px;
+$button-padding: 12px 20px;
+
+$color-button-bg: navy;
+$color-button-text: white;
+$color-error: rgb(238, 27, 27);
+$color-input-border: gray;
+$color-bg-form: white;
+
+/* -------------------------------
+   Global Styles
+---------------------------------*/
+body {
+  background-color: $bg-color;
+  font-family: $main-font;
+}
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+}
+
+/* -------------------------------
+   Tip Calculator
+---------------------------------*/
+.tip-calculator {
+  background-color: $color-bg-form;
+  border-radius: $border-radius-lg;
+  width: 400px;
+  margin-top: 100px;
+  padding: 20px;
+  box-shadow: $shadow-sm;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    label {
+      font-size: $font-md;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      input,
+      select {
+        padding: $input-padding;
+        border-radius: $border-radius-sm;
+        border: 1px solid $color-input-border;
+        outline: none;
+      }
+    }
+
+    #submit-btn {
+      background-color: $color-button-bg;
+      color: $color-button-text;
+      padding: $button-padding;
+      border-radius: $border-radius-md;
+      border: none;
+      cursor: pointer;
+      margin-top: 8px;
+    }
+
+    .tipAmount {
+      color: $color-error;
+      font-size: $font-md;
+    }
+  }
+}

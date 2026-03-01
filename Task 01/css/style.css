@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+/* -------------------------------
+   Variables
+---------------------------------*/
+/* -------------------------------
+   Global Styles
+---------------------------------*/
+body {
+  background-color: rgb(222, 222, 222);
+  font-family: "Sora", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* -------------------------------
+   Tip Calculator
+---------------------------------*/
+.tip-calculator {
+  background-color: white;
+  border-radius: 12px;
+  width: 400px;
+  margin-top: 100px;
+  padding: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.tip-calculator form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.tip-calculator form label {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.tip-calculator form label input,
+.tip-calculator form label select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid gray;
+  outline: none;
+}
+.tip-calculator form #submit-btn {
+  background-color: navy;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-top: 8px;
+}
+.tip-calculator form .tipAmount {
+  color: rgb(238, 27, 27);
+  font-size: 14px;
+}/*# sourceMappingURL=style.css.map */
