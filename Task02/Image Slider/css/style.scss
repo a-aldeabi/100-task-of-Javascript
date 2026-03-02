@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+/* -------------------------------
+   Variables
+---------------------------------*/
+$container-width: 1200px;
+$bg-color: rgb(222, 222, 222);
+$main-font: "Sora", sans-serif;
+
+$shadow-sm: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+$font-sm: 12px;
+$font-md: 14px;
+$font-lg: 16px;
+$font-xl: 18px;
+$font-xxl: 20px;
+
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 12px;
+
+/* -------------------------------
+   Global Styles
+---------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bg-color;
+  font-family: $main-font;
+}
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+}
+
+/* -------------------------------
+   Slider
+---------------------------------*/
+.slider-wrapper {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: $border-radius-md;
+  -moz-border-radius: $border-radius-md;
+  -ms-border-radius: $border-radius-md;
+  -o-border-radius: $border-radius-md;
+  -webkit-border-radius: $border-radius-md;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: relative;
+  .slider-container {
+    width: 100%;
+    max-width: 640px;
+    height: 360px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    border-radius: $border-radius-md;
+    -webkit-border-radius: $border-radius-md;
+    -moz-border-radius: $border-radius-md;
+    -ms-border-radius: $border-radius-md;
+    -o-border-radius: $border-radius-md;
+  }
+
+  .slider {
+    display: flex;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+
+    .slider-item {
+      min-width: 100%;
+      border-radius: 12px;
+      -webkit-border-radius: 12px;
+      -moz-border-radius: 12px;
+      -ms-border-radius: 12px;
+      -o-border-radius: 12px;
+
+      .slider-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+    }
+  }
+  .next,
+  .prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #9fa6ae42;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 24px;
+  }
+  .next {
+    right: 10px;
+  }
+  .prev {
+    left: 10px;
+  }
+}
+
+.text-area {
+  padding: 20px 0;
+  h2 {
+    color: rgb(19, 19, 19);
+    font-size: 24px;
+  }
+  p {
+    color: rgb(114, 114, 114);
+    font-size: 14px;
+    margin-top: 12px;
+  }
+}
+
+.title {
+  text-align: left;
+  h1 {
+    font-size: 24px;
+    padding: 14px 0;
+  }
+}

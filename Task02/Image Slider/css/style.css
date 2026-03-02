@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+/* -------------------------------
+   Variables
+---------------------------------*/
+/* -------------------------------
+   Global Styles
+---------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(222, 222, 222);
+  font-family: "Sora", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* -------------------------------
+   Slider
+---------------------------------*/
+.slider-wrapper {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: relative;
+}
+.slider-wrapper .slider-container {
+  width: 100%;
+  max-width: 640px;
+  height: 360px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.slider-wrapper .slider {
+  display: flex;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+.slider-wrapper .slider .slider-item {
+  min-width: 100%;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.slider-wrapper .slider .slider-item .slider-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.slider-wrapper .next,
+.slider-wrapper .prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(159, 166, 174, 0.2588235294);
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+.slider-wrapper .next {
+  right: 10px;
+}
+.slider-wrapper .prev {
+  left: 10px;
+}
+
+.text-area {
+  padding: 20px 0;
+}
+.text-area h2 {
+  color: rgb(19, 19, 19);
+  font-size: 24px;
+}
+.text-area p {
+  color: rgb(114, 114, 114);
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+.title {
+  text-align: left;
+}
+.title h1 {
+  font-size: 24px;
+  padding: 14px 0;
+}/*# sourceMappingURL=style.css.map */

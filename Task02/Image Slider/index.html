@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Remix Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Slider Wrapper -->
+    <section class="slider-wrapper">
+      <!-- Title -->
+      <div class="title">
+        <h1>Card Slider Image</h1>
+      </div>
+
+      <!-- Slider Container -->
+      <div class="slider-container">
+        <!-- Slider -->
+        <div class="slider" id="slider">
+          <div class="slider-item">
+            <img src="img/1.jpg" alt="Sky 1" />
+          </div>
+
+          <div class="slider-item">
+            <img src="img/2.jpg" alt="Sky 2" />
+          </div>
+
+          <div class="slider-item">
+            <img src="img/3.jpg" alt="Sky 3" />
+          </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="navigation">
+          <button class="prev" id="prev">
+            <i class="ri-arrow-left-s-line"></i>
+          </button>
+
+          <button class="next" id="next">
+            <i class="ri-arrow-right-s-line"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Text Area -->
+      <div class="text-area">
+        <h2>Explore Stunning Landscapes</h2>
+        <p>
+          Discover breathtaking scenery through our interactive image slider.
+        </p>
+      </div>
+    </section>
+    <!-- End Slider Wrapper -->
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
