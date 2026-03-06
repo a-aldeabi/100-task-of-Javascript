@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+/* -------------------------------
+   Variables
+---------------------------------*/
+$container-width: 1200px;
+$bg-color: rgb(222, 222, 222);
+$main-font: "Sora", sans-serif;
+
+$shadow-sm: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+$font-sm: 12px;
+$font-md: 14px;
+$font-lg: 16px;
+$font-xl: 18px;
+$font-xxl: 20px;
+
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 12px;
+
+/* -------------------------------
+   Global Styles
+---------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $main-font;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+.content {
+  max-width: 600px;
+  border: 1px solid rgb(175, 175, 175);
+  padding: 40px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+  .btns {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+    .btn-up,
+    .btn-down {
+      background-color: purple;
+      color: white;
+      padding: 12px;
+      flex: 1;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      cursor: pointer;
+      border: none;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+/* -------------------------------
+   Variables
+---------------------------------*/
+/* -------------------------------
+   Global Styles
+---------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+.content {
+  max-width: 600px;
+  border: 1px solid rgb(175, 175, 175);
+  padding: 40px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+}
+.content .btns {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+.content .btns .btn-up,
+.content .btns .btn-down {
+  background-color: purple;
+  color: white;
+  padding: 12px;
+  flex: 1;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}/*# sourceMappingURL=style.css.map */
