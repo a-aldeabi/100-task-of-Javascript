@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+body {
+  font-family: "Sora", sans-serif;
+}
+
+.card-list {
+  max-width: 450px;
+  margin: 0 auto;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  min-height: 200px;
+  margin-top: 100px;
+  padding: 40px;
+}
+.card-list #list {
+  padding: 0;
+  color: rgb(85, 85, 85);
+  margin-bottom: 20px;
+  list-style-type: none;
+  font-size: 14px;
+}
+.card-list #list li {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.card-list #list li .delet-btn {
+  background: white;
+  color: rgb(225, 38, 38);
+  border: 1px solid #e0e0e0;
+  width: 32px;
+  height: 32px;
+  border-radius: 200px;
+  cursor: pointer;
+}
+.card-list #item-input {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 8px;
+  border: none;
+  border: 1px solid gray;
+  width: 97%;
+}
+
+#add-btn {
+  background-color: rgb(48, 48, 180);
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 12px 20px;
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
