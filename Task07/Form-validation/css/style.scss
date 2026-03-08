@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+body {
+  font-family: "Sora", sans-serif;
+  background-color: #dbccf9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 500px;
+    label {
+      display: flex;
+      font-size: 14px;
+      color: rgb(82, 82, 82);
+      flex-direction: column;
+      gap: 8px;
+      input,
+      textarea {
+        border: 1px solid gray;
+        padding: 8px;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        &::placeholder {
+          color: rgb(169, 169, 169);
+          font-size: 12px;
+        }
+      }
+      textarea {
+        min-height: 60px;
+      }
+    }
+    .btn-submit {
+      padding: 10px;
+      background-color: #5b2db7;
+      color: white;
+      border-radius: 8px;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -o-border-radius: 8px;
+      border: none;
+      cursor: pointer;
+    }
+    #Error-Message {
+      color: rgb(224, 45, 45);
+      margin: 0;
+      font-size: 13px;
+      ul {
+        margin: 0;
+        padding: 0 20px;
+      }
+    }
+  }
+}

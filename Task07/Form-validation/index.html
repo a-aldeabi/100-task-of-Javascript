@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form validation</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Create user account</h1>
+
+      <form>
+        <label>
+          <span>First Name *</span>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            placeholder="First Name"
+            required
+          />
+        </label>
+
+        <label>
+          <span>Last Name *</span>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            placeholder="Last Name"
+            required
+          />
+        </label>
+
+        <label>
+          <span>Email Address *</span>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
+        </label>
+
+        <label>
+          <span>Password *</span>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+        </label>
+
+        <label>
+          <span>Repeat Password *</span>
+          <input
+            type="password"
+            id="repeatPassword"
+            name="repeatPassword"
+            placeholder="Repeat Password"
+            required
+          />
+        </label>
+
+        <button type="submit" class="btn-submit" id="btn-submit">
+          Create account
+        </button>
+        <div id="Error-Message"></div>
+      </form>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
