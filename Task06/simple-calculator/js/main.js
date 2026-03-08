@@ -28,12 +28,16 @@ buttons.forEach((button) => {
     }
   });
 });
-
 equal.addEventListener("click", () => {
   try {
     const expr = display.textContent;
     if (/^[0-9+\-*/.]+$/.test(expr)) {
-      display.textContent = eval(expr);
+      let result = eval(expr);
+
+      display.textContent = Number(result).toLocaleString(undefined, {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2,
+      });
     } else {
       display.textContent = "Error";
     }
